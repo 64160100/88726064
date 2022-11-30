@@ -1,46 +1,123 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        <table>
-        <h1>
-            แนะนำตัวเอง
-        </h1>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
 
-        <h5>
-            <td>นายบุณยกร แก่นประธูป อายุ 20 ปี <br>
-            เรียนอยู่ที่ มหาวิทยาลัยบูรพา <br>
-            หลักสูตร เทคโนโลยีสารสนเทศเพื่ออุตสาหกรรมดิจิทัล <br>
+<style>
+aside{
+    float: right;
+}
+</style>
+
+<body>
+    <meta charset='utf-8'>
+    <aside float="right" >
+        <fieldset>
+        <td>แถบด้านข้างหลัก</td>
+        <ul>
+           <li><a href="https://www.google.co.th/?hl=th">google</a></li>
+           <li><a href="https://www.youtube.com/">youtube</a></li>
+           <li><a href="https://openclipart.org/">openclipart</a></li>
+        </ul>
+        </fieldset>
+        </aside>
+
+    <h1>เว็บไซต์ของฉัน</h1>
+    <hr width=40%; style="margin-left: 0;";">
+    <p>
+        <td>นายบุณยกร แก่นประธูป อายุ 20 ปี <br>
+            เรียนอยู่ที่ : มหาวิทยาลัยบูรพา <br>
+            หลักสูตร : เทคโนโลยีสารสนเทศเพื่ออุตสาหกรรมดิจิทัล <br>
             สิ่งที่ชอบ : เล่นฟุตบอล เล่นเกม ตีแบต <br>
-        </h5>
+    </p>
 
-            <img src="D:\64160100\88726064\lab01\img\pexels-flo-dahm-1643773.jpg" alt="My test image" width=250>
-            จากภาพจะสื่อให้รู้สึกถึงบรรยากาศที่หนาวเย็นแต่ก็จะรู้สึกสึกถึงความร้อนด้วยเพราะกำลังอยู่ในช่วงพระอาทิตย์ตกดิน
-            </td>
-        </tr>
-        
-        <tr>
-            <td row span="4"> 
-            <a href="https://www.pexels.com/th-th/" title="อร่อยเฉย">กดตรงนี้</a>
-            </td>
-        </tr>
-        </table>
-        <form action="my-handling-form-page" method="post">
-            <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name">
-            </div>
-            <div>
-            <label for="mail">E-mail:</label>
-            <input type="email" id="mail" name="user_mail">
-            </div>
-            <div>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message"></textarea>
-            </div>
-            </form>
-    </body>
+        <h1>รูปภาพ</h1>
+        <hr width=40%; style="margin-left: 0;";">
+        <img src="D:\64160100\88726064\lab01\img\pexels-flo-dahm-1643773.jpg" width="150" >
+        จากภาพจะสื่อให้รู้สึกถึงบรรยากาศที่หนาวเย็นแต่ก็จะรู้สึกสึกถึงความร้อนด้วยเพราะกำลังอยู่ในช่วงพระอาทิตย์ตกดิน 
+
+    <h1>ตารางเรียน</h1>
+    <hr width=40%; style="margin-left: 0;";">
+
+    <table border="1">
+    <tr bgcolor="green">
+        <th bgcolor="yellow">DayTime</th>
+        <th>16:00-17:00</th>
+        <th>17:00-18:00</th>
+        <th>18:00-19:00</th>
+        <th>19:00-20:00</th>
+        </th>
+    </tr>
+    
+    <tr>
+        <td>จันทร์</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>อังคาร</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td rowspan="2">พุธ</td>
+        <td colspan="2">
+        88726064-64<br>
+        (3) 1, IF-5T05<br>
+        IF
+        </td>
+        <td colspan="2">
+        88726064-64 <br>
+        (3) 1, IF-3C02 <br>
+        IF
+    </td>
+    </tr>
+    <tr>
+        <td rowspan="2">
+    </tr>
+    <tr>
+        <td>พฤหัสบดี</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ศุกร์</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </table>
+
+    <h1>ตัวอย่างแบบฟอร์ม</h1>
+    <hr width=40%; style="margin-left: 0;";">
+    <form>
+        <label>Your name :</label>
+        <input type="text">
+        <br><br>
+        <label>Your gmail :</label>
+        <input type="text">
+        <br><br>
+        <label>command :<br>
+        </label>
+        <textarea></textarea> <br>
+        <button type="submit"> ส่งข้อความ</button>
+    </form>
+
+
+</body>
+
 </html>
-   
