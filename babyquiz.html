@@ -10,14 +10,20 @@
     <form method="post" action="https://angsila.cs.buu.ac.th/~wittawas/652/88726064/services/post.php"> 
         <input type="hidden" name="stdcode" value="6416100">
         <label for="sex">เพศของคุณคือ:</label>
-        <input type="radio" name="sex" id="sex" value="M">ชาย
-        <input type="radio" name="sex" id="sex" value="F">หญิง
-        <input type="radio" name="sex" id="sex" value="F">ไม่แน่ใจ
+        <input type="radio" name="sex" id="sex" value="m">ชาย
+        <input type="radio" name="sex" id="sex" value="f">หญิง
+        <input type="radio" name="sex" id="sex" value="t">ไม่แน่ใจ
         <br><br>
         <label for="name">คุณอายุเท่าไหร่:
-        <input type="text" name="name" id="name">
+        <input type="text" name="age" size="5" maxlength="3">
         ปี</label>
         <br><br>
+        <hr>
+        <label>1.ไก่กับไข่ อะไรเกิดก่อนกัน</label>
+        <br><br>
+        <input type="radio" name = "q1" value="1"> ไก่<br>
+        <input type="radio" name = "q1" value="2"> ไข่<br>
+        <input type="radio" name = "q1" value="2"> โลก
     </form>
 </body>
 </html>
